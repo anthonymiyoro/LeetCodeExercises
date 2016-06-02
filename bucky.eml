@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="OSGi%Minimum-1.2">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+</component>
