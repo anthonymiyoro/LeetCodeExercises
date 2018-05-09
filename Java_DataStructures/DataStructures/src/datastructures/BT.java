@@ -7,7 +7,7 @@ package datastructures;
  /* Class BT */
 	public class BT
 	 {
-	     private BTNode root;
+	     private datastructures.BTNode root;
 	 
 	     /* Constructor */
 	     public BT()
