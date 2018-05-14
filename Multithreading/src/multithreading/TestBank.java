@@ -50,6 +50,14 @@ public class TestBank extends Bank {
         else if (option_1 == 3){
             System.out.println("You may view your balance below for 1000ms:");
             System.out.println(bank_tester.balance);
+//            Thrad that sleeps for 1000ms
+            try {
+                Thread.sleep(1000);
+
+            } catch (InterruptedException e) {
+                System.out.println("Thread inturrupted");
+                e.printStackTrace();
+            }
         }
 
         else{
