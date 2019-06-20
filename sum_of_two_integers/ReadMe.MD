@@ -15,5 +15,4 @@ Output: 1
 '''
 Explanation: The solution I used uses a buit on Python Function to calculate the sum of 2 integers. Was it cheating??? :^)
 
-
 '''
