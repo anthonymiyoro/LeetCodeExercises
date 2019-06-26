@@ -1,13 +1,14 @@
-## CLIMBING STAIRS
-[Found Here!!!](https://leetcode.com/problems/climbing-stairs/)
+## FIBONACCI NUMBER
+[Found Here!!!](https://leetcode.com/problems/fibonacci-number)
 
 ### QUESTION
 
-You are climbing a stair case. It takes n steps to reach to the top.
+The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is,
 
-Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
-
-Note: Given n will be a positive integer.
+```
+F(0) = 0,   F(1) = 1
+F(N) = F(N - 1) + F(N - 2), for N > 1.
+```
 
 ### EXAMPLES
 ```
@@ -27,7 +28,6 @@ Explanation: There are three ways to climb to the top.
     1. 1 step + 1 step + 1 step
     2. 1 step + 2 steps
     3. 2 steps + 1 step
-    
 ```
 
 ### SOLUTION
