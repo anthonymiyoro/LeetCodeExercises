@@ -21,6 +21,6 @@ You may assume that each input would have exactly one solution, and you may not 
 
 '''
 
-    My proposed soltion uses a nested for loop to loop through 2 copies of a list and add each other eg [2, 7, 11, 15] + [2, 7, 11, 15] one by one for each item. This is a "brute force" solution. And can be improved.
+    My proposed solution uses a nested for loop to loop through 2 copies of a list and add each other eg [2, 7, 11, 15] + [2, 7, 11, 15] one by one for each item. This is a "brute force" solution. And can be improved.
 
 '''
