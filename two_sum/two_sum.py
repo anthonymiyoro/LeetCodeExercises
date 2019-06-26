@@ -5,7 +5,8 @@ class Solution:
         def twoSum(self, nums, target):
                 answer_list = []
                 for i in nums_list:
-                        for j in nums_list:
+                        # Skip 1st element in list
+                        for j in nums_list[1:]:
                                 if (i+j) == target:
                                         answer_list.append(nums_list.index(i))
                                         answer_list.append(nums_list.index(j))
@@ -16,4 +17,4 @@ class Solution:
 
 solution = Solution()
 solution.twoSum(nums_list, target)
-   
+    
