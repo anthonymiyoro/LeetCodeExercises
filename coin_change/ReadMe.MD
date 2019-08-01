@@ -12,8 +12,12 @@ Example 1:
 Example 2:
 
 '''
-Input: coins = [2], amount = 3
-Output: -1
-Note:
-You may assume that you have an infinite number of each kind of coin.
+    Input: coins = [2], amount = 3
+    Output: -1
+    Note:
+    You may assume that you have an infinite number of each kind of coin.
+
 '''
+
+https://leetcode.com/problems/coin-change/discuss/77368/*Java*-Both-iterative-and-recursive-solutions-with-explanations
+https://leetcode.com/problems/coin-change/
