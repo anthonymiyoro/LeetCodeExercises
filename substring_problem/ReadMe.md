@@ -10,6 +10,8 @@ The function should return 3 because after stating A 3 times, getting ‘abcdabc
 You can assume that n and m are integers in the range [1, 1000].
 
 ### Proposed Solution
+- Build subset of string A one by one
+- Search for this subset in string B
 - Search for subset of string 
 - Store search result in counter
 - Loop through the string building each letter to a string
