@@ -9,11 +9,19 @@ The function should return 3 because after stating A 3 times, getting ‘abcdabc
 
 You can assume that n and m are integers in the range [1, 1000].
 
-### Proposed Solution
+### Proposed Solution (Wrong!)
 - Build subset of string A one by one
 - Search for this subset in string B
 - Search for subset of string 
 - Store search result in counter
 - Loop through the string building each letter to a string
+
+### Correct Solution
+- Append A ontu itself while checking to make sure the length of the string is greater than that of B
+- When the length of A is greater than that of B, check if B is substring of A
+- Return counter with number of times appended
+- This shows the number of substrings
+
+
 
 
