@@ -13,7 +13,7 @@ class Solution():
     
 if __name__=='__main__':
      # Run function on array "A" as input
-    A = [-13, -3, -25, -20, -3, -16, -23, -12, -5, -22, -15, -4, -7] 
+    A = [3, -5, 1, 2, -1, 4, -3, 1, -2] 
     
     solution_class = Solution()
     solution = solution_class.highestSubArraySum(A,len(A))
