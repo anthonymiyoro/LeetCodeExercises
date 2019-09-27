@@ -12,11 +12,15 @@ class Solution():
     
     
 if __name__=='__main__':
-     # Run function on array "A" as input
-    A = [3, -5, 1, 2, -1, 4, -3, 1, -2] 
+    
+    question_array = open(r"data/input_1.txt","r")
+    question = question_array.read()
+    question_array = question.split(" ")
+    question_array = list(map(int, question_array)) 
+    print (question_array)
     
     solution_class = Solution()
-    solution = solution_class.highestSubArraySum(A,len(A))
+    solution = solution_class.highestSubArraySum(question_array,len(question_array))
    
     
     
