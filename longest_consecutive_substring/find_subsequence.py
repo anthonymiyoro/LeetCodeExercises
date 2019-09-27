@@ -1,31 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+This Python module finds the consecutive, non-empty subsequence with the highest sum from a file containing a list of integers.
+This is done by iterating over every sub-array from largest_size to smallest_size while using a prefix sum to improve performance.
+"""
 import sys
 
 class Solution():
     def highestSubArraySum(self, array, array_size, smallest_size, largest_size):
-        # print (array, array_size, smallest_size, largest_size)
-        maximum = 0; 
-        
+        maximum = 0
         # Calculate the prefix sum array  
         prefix = [0] * array_size 
         prefix[0] = array[0]; 
         for i in range(1, array_size): 
             prefix[i] = prefix[i - 1] + array[i]
         
-        # Iterate over all sub-arrays 
-        for i in range(array_size): 
-            j = i + smallest_size - 1
-            
-            # Sub-arrays of size X to Y 
-            while(j < i + largest_size and j < array_size): 
-                # Get the sum of the sub-array 
-                sum = prefix[j]
-                if (i > 0): 
-                    sum = sum - prefix[i - 1]; 
-                
-                # Find average of sub-array  
-                current = sum; 
-                # Store the maximum of average 
-                maximum = max(maximum, current); 
+        # Iterate over all sub-arrays of size smallest_size to largest_size collecting highest sum
+        for array_item in range(array_size): 
+            j = array_item + smallest_size - 1    
+            while(j < array_item + largest_size and j < array_size): 
+                sum_value = prefix[j]
+                if (array_item > 0): 
+                    sum_value = sum_value - prefix[array_item - 1]; 
+                maximum = max(maximum, sum_value); 
                 j = j + 1
                 
         print(maximum)
@@ -57,12 +53,11 @@ if __name__=='__main__':
     question_array = question.split(" ")
     question_array = list(map(int, question_array)) 
     
-    # Run solution function
+    # Run solution function depending on behaviour parameter
+    solution_class = Solution()
     if calc_metric == "differences":
-        solution_class = Solution()
         solution = solution_class.createAbsoluteDifference(question_array,len(question_array),1,maximum_subsequence_length)
     else:
-        solution_class = Solution()
         solution = solution_class.highestSubArraySum(question_array,len(question_array),1,maximum_subsequence_length)
    
     
