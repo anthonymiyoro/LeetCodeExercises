@@ -1,7 +1,7 @@
 import sys
 
 class Solution():
-    def highestSubArraySum(this, array, array_size, smallest_size, largest_size) :  
+    def highestSubArraySum(self, array, array_size, smallest_size, largest_size):  
         maximum = 0; 
         
         # Calculate the prefix sum array  
@@ -28,20 +28,15 @@ class Solution():
                 j = j + 1
                 
         print (maximum)
-        return maximum;
+        return maximum
     
     # convert array to absolute difference version
-    def createAbsoluteDifference(this, array, array_size, smallest_size, largest_size):
+    def createAbsoluteDifference(self, array, array_size, smallest_size, largest_size):
         for i in range(array_size - 1): 
             diff = abs(array[i] - array[i + 1]) 
-            print(diff, end = " ")
         
         # calculate highest subsequence sum
-        this.highestSubArraySum(array, array_size, smallest_size, largest_size)
-        
-          
-      
-
+        self.highestSubArraySum(array, array_size, smallest_size, largest_size)
 
 if __name__=='__main__':
     # Collect file location and maximum substring length
