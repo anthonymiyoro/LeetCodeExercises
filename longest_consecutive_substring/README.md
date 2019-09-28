@@ -53,3 +53,6 @@ python find_subsequence.py data/input_3.txt 30 values
 python find_subsequence.py data/input_3.txt 10 differences
 >> 40
 ```
+
+### SOLUTION
+This is done by iterating over every sub-array from largest_size to smallest_size while using a prefix sum to improve performance
