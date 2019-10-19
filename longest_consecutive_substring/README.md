@@ -56,3 +56,5 @@ python find_subsequence.py data/input_3.txt 10 differences
 
 ### SOLUTION
 This is done by iterating over every sub-array from largest_size to smallest_size while using a prefix sum to improve performance
+
+Part of solution is from here: https://www.geeksforgeeks.org/maximum-sum-subsequence-of-length-k/
