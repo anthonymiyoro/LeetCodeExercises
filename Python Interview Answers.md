@@ -27,7 +27,7 @@ You should return the pair with the largest number.
 
 
 
-
+```
 
 from itertools import combinations 
 
@@ -45,9 +45,9 @@ for index, number in combinations(enumerate(nums), 2):
         
 
 print("answer", list(sorted(outputs, key=lambda k:sorted(k[1], reverse=True)[0], reverse=True)[0][0]))
-
+```
 ===================================
-
+```
 def findPair(nums, target):
     Map, res, maxm = {}, [], float('-inf')
     for i, num in enumerate(nums):
@@ -61,7 +61,7 @@ def findPair(nums, target):
     return res
 
 
-
+```
 
 
 #####
@@ -101,6 +101,7 @@ Return the max of that, so 4.
 
 
 #####
+```
 matrix = [[5, 1],[4, 5]]
 
 def max_min_path(matrix):
@@ -135,10 +136,9 @@ def max_min_path(matrix):
     
 max_min_path(matrix)
 
-
+```
 
 ####
-
 Given a string s and an int k, return all unique substrings of s of size k with k distinct characters.
 
 Example 1:
@@ -165,7 +165,7 @@ Constraints:
     0 ≤ k ≤ 26
 
 ######
-
+```
 def substringk(s, k):
     if not s or k == 0:
         return []
@@ -180,3 +180,5 @@ def substringk(s, k):
             res.add(s[start:i+1])
             start += 1
     return list(res)
+    
+```
