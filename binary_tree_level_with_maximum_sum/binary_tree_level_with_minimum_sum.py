@@ -1,18 +1,19 @@
-class Node:
-    def __init__(self, value, left=None, right=None):
-        self.val = value
-        self.left = left
-        self.right = right
-        
-    def minimum_level_sum(root):
-
-        node = Node(10)
-        node.left = Node(2)
-        node.right = Node(8)
-        node.left.left = Node(4)
-        node.left.right = Node(1)
-        node.right.right = Node(2)
-        print (node)
-
-
-minimum_level_sum(root)
+class Solution:
+    def maxLevelSum(self, root: TreeNode):
+        max, level, maxLevel = -float('inf'), 0, 0
+        q = collections.deque()
+        q.append(root)
+        while q:
+            level += 1
+            sum = 0
+            for _ in range(len(q)):
+                node = q.popleft()
+                sum += node.val
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+            if max < sum:
+                max, maxLevel = sum, level        
+        return maxLevel
+            
