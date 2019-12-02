@@ -26,3 +26,8 @@ Input :          1
                    6     7  
 Output :  17
 ```
+
+### Proposed Solution
+- Loop through each row of the tree and store the sum while updating the max so far with each loop.
+
+- Line 7 to 16 loops through the tree checking the total sum while line 18 to 19 updates the largest sum.
