@@ -13,9 +13,9 @@ class Solution:
             hotter.append(np.argmax(temperature_list[index:] > temperature))
             
             # print ("hotter", hotter)
-        print (hotter)
+        print ()
         return hotter
 
-T = [73, 74, 75, 71, 69, 72, 76, 73]
+T = [5, 4, 5, 1, 3, 3, 8, 2]
 solution = Solution()
 solution.dailyTemperatures(T)
