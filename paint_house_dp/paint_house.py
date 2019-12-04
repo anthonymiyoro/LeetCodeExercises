@@ -26,11 +26,11 @@ class Solution(object):
         # Loop though the full set finding the sum of the minimums
             for i in range(1,m):
                 dp[i][0] = min(dp[i-1][1],dp[i-1][2]) + costs[i][0]
-                print ("dp0", dp[i][0])
+                print ("dp0", dp[i][0], "costs0", costs[i][0])
                 dp[i][1] = min(dp[i-1][0],dp[i-1][2]) + costs[i][1]
-                print ("dp1", dp[i][1])
+                print ("dp1", dp[i][1], "costs1", costs[i][1])
                 dp[i][2] = min(dp[i-1][0],dp[i-1][1]) + costs[i][2]
-                print ("dp2", dp[i][2])
+                print ("dp2", dp[i][2], "costs2", costs[i][2])
             
             print ("solution", min(dp[m-1][0], dp[m-1][1], dp[m-1][2]))
             return min(dp[m-1][0], dp[m-1][1], dp[m-1][2])

@@ -1,6 +1,9 @@
 # https://leetcode.com/discuss/interview-question/algorithms/374846/twitter-oa-2019-university-career-fair
 # https://www.codespeedy.com/interval-scheduling-in-python/
 
+# print(universityCareerFair([1, 3, 3, 5, 7], [2, 2, 1, 2, 1])) # 4
+# print(universityCareerFair([1, 2], [7, 3])) # 1
+
 def universityCareerFair(arrival, duration):
     finish = list(map(sum, zip(duration,arrival)))
     index = list(range(len(arrival)))
