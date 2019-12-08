@@ -18,3 +18,8 @@ Input:[1, 2, 3, 4, 5], k = 1
 Output: 4
 Explanation: There are four 1-diff pairs in the array, (1, 2), (2, 3), (3, 4) and (4, 5).
 ```
+
+### Proposed Solution
+- Create a dictionary with Counter of all array objects
+- Loop through this dictionary while checking if k + dictionary item exists.
+- If it does exist, increment counter by 1, if not skip

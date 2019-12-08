@@ -8,6 +8,7 @@ class Solution:
         
         # loop through {1: 2, 3: 1, 4: 1, 5: 1}
         for item in collection_counter:
+            print ("item", item)
             # IDK honestly
             if k > 0 and item + k in collection_counter or k == 0 and collection_counter[item] > 1:
                 result = result + 1
