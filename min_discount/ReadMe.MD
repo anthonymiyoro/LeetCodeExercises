@@ -14,17 +14,9 @@ For example
 8 - 2 = 6
 2 - 0 = 2 (This element will also not get discount as no equal to or less than price on right).
 
-Output -
-Total = 18
-Elements ID not getting discount - 3, 7
-
-Approaches I tried -
-
-    Brute force - Timed out for 3 test cases (They expect lower time complexity)
-    Keep a minimum index stored, so only find minIndex when current index is equal to or less than minIndex but it fails in test case like [3, 4, 4, 3].
-    It will do 3 - 3, 4 - 3 (incorrect as it should be 4 - 4 as 4 is next equal to or less element available in first right).
-
-Any O(n) or better solution than O(n^2)?
+#### Output  
+- Total [18]
+- Elements ID not getting discount  [3, 7]
 
 ### Proposed Solution
 
