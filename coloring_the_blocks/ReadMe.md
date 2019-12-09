@@ -7,4 +7,4 @@
 
 
 ### Proposed Solution
-Make use of the Interval Scheduling Algorithm as found [here](https://www.codespeedy.com/interval-scheduling-in-python/)
+Similar to paint house found in this repo: https://leetcode.com/problems/paint-house/.
