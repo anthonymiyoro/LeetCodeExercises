@@ -1,4 +1,4 @@
-## Find maximum level sum in Binary Tree
+## Find maximum level sum in Binary Tree (Tree Traversal)
 
 ### Given a Binary Tree having positive and negative nodes, the task is to find maximum sum level in it.
 
