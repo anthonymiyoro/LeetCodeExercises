@@ -1,7 +1,9 @@
 ## Turnstile Problem (Queue)
+https://leetcode.com/discuss/interview-question/393226/akuna-capital-oa-2019-quant
 
 
 ### Problem Definition
+
 A university has exactly one turnstile. Unforutnately many people want to pass through the turnstile in different directions. 
 
 The ith person comes to turnstile at times[i] and wants to either exit the university(direction=1) or enter the university(direction=0).
@@ -14,6 +16,7 @@ If someone wants to enter the university and other person wants to exit at the s
 * if in previous second the turnstile was used as entrance then the person who wants to enter goes first.
 
 Passing through the turnstile takes 1 second. For each person return the time at which they pass through the turnstile. 
+
 
 ### Example 
 ```
