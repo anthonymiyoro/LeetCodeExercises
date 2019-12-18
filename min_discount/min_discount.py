@@ -1,4 +1,4 @@
-# This function returns the final prices of items after discount
+# This function returns the final prices of items after discount and the index of discounted items
 class Solution:
     def finalPrice(self, prices):
         result_list = []
@@ -19,11 +19,15 @@ class Solution:
             # add the discount, if any, and then add the current price to the stack
             res = res + prices[i] if not nle_stack else prices[i] - nle_stack[-1]
             
-            # append discounted prices to list
+            # append discounted prices to discount list
             result_list.append(res)
             
             # update nle stack
             nle_stack.append(prices[i])
+            
+            print ("nle_stack", nle_stack)
+            print ("result_list", result_list)
+            print ("   ")
          
         # Put list back in order 
         result_list = result_list[::-1]
