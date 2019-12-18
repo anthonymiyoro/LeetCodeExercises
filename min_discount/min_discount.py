@@ -18,17 +18,24 @@ class Solution:
 
             # add the discount, if any, and then add the current price to the stack
             res = res + prices[i] if not nle_stack else prices[i] - nle_stack[-1]
-            # append discounted prices to list then reverse it back
-            result_list.append(res)
-            result_list.reverse()
             
+            # append discounted prices to list
+            result_list.append(res)
+            
+            # update nle stack
             nle_stack.append(prices[i])
+         
+        # Put list back in order 
+        result_list = result_list[::-1]
         
-        
-        print (result_list)
-        return res
-    
-    
+        # Check if element did or did not get a discount by comparing with input array
+        # then return index.
+        for price, result in zip(prices, result_list):
+            if price == result:
+                print(prices.index(price))
+
+        print ("answer", result_list)
+        return res   
     
 prices = [5, 4, 5, 1, 3, 3, 8, 2]
 solution = Solution()
