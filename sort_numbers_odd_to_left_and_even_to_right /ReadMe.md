@@ -15,3 +15,10 @@ Output : arr[] = {7, 5, 3, 1, 0, 2, 4}
 
 Asked in : Microsoft
 ```
+
+### Solution
+Method 2 (Using negative multiplication):
+
+Make all odd numbers negative.
+Sort all numbers.
+Revert the changes made in step 1 to get original elements back.
