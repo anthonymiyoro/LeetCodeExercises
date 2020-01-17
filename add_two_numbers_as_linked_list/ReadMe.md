@@ -14,30 +14,12 @@ Explanation:
 ```
 342 + 465 = 807.
 ```
-Here is the function signature as a starting point (in Python):
+
+- Get the lenght of both lists
+- Add leading 0s to shorter list
 
 ```
-# Definition for singly-linked list.
-class ListNode(object):
-  def __init__(self, x):
-    self.val = x
-    self.next = None
-
-class Solution:
-  def addTwoNumbers(self, l1, l2, c = 0):
-    # Fill this in.
-
-l1 = ListNode(2)
-l1.next = ListNode(4)
-l1.next.next = ListNode(3)
-
-l2 = ListNode(5)
-l2.next = ListNode(6)
-l2.next.next = ListNode(4)
-
-result = Solution().addTwoNumbers(l1, l2)
-while result:
-  print result.val,
-  result = result.next
-# 7 0 8
+[1,2,3,4]  [1,2,3,4]
+[1,2,3]    [0,1,2,3]
 ```
+- Add the numbers individually and store them in new linked list while carrying over 1 of greater than 9 
