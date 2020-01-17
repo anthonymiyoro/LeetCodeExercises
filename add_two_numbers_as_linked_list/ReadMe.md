@@ -11,11 +11,7 @@ Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 0 -> 8
 ```
 Explanation: 
-```
-342 + 465 = 807.
-```
-
-- Get the lenght of both lists
+- Get the length of both lists
 - Add leading 0s to shorter list
 
 ```
