@@ -17,7 +17,7 @@ class Solution:
             ans = l3
         return ans
 
-    # get lenght of a linked list
+    # get length of a linked list
     def getLength(self, node):
         l = 0
         while node:
@@ -33,14 +33,15 @@ class Solution:
             node = new
         return node
 
-    # add individual values in both lists    
+    # add individual values in both lists, if there is a carry over, add it as well 
     def combineList(self, l1, l2):
         if (not l1 and not l2):
             return (0, None)
         carry_over, new = self.combineList(l1.next, l2.next)
         s = l1.val+l2.val+carry_over
+        
+    # append added value and make new node?
         ans = ListNode(int(s % 10))
         ans.next = new
         
         return (s/10, ans)
-              
