@@ -44,4 +44,4 @@ class Solution:
         ans = ListNode(int(s % 10))
         ans.next = new
         
-        return (s/10, ans)
+        return (int(s/10), ans)
