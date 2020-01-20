@@ -25,9 +25,11 @@ class Solution:
         # Restore original list and build new list
         head_copy = head.random if head else None
         node = head
+        
         while node:
             node.random.next = node.next.random if node.next else None
             node.random = node.random.next
             node = node.next
             
         return head_copy
+            
