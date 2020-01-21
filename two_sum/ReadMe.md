@@ -1,5 +1,6 @@
 ## TWO SUM
-[Found Here!!!](https://leetcode.com/problems/two-sum/)
+https://leetcode.com/problems/two-sum/
+https://stackoverflow.com/questions/509211/understanding-slice-notation
 
 ### QUESTION
 
@@ -8,7 +9,6 @@ Given an array of integers, return indices of the two numbers such that they add
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
 '''
-    Example:
 
     Given nums = [2, 7, 11, 15], target = 9,
 
@@ -19,8 +19,6 @@ You may assume that each input would have exactly one solution, and you may not 
 
 ### SOLUTION
 
-'''
-
-    My proposed solution uses a nested for loop to loop through 2 copies of a list and add each other eg [2, 7, 11, 15] + [2, 7, 11, 15] one by one for each item. This is a "brute force" solution. And can be improved.
-
-'''
+- Loop through list input
+- if item - target is somewhere in the list,
+- Return index of item and index of (item - target)
