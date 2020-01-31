@@ -22,8 +22,8 @@ Write an efficient algorithm for the following assumptions:
 ## Proposed Solution
 
 - Loop through input
-- Use Pythons' group by to group similar letters together
-- If there is a group with a length greater than 3, increment counter
+- Use Pythons' group by to group similar letter groups together
+- If there is a group with a length greater than 3, divide the length by (//3) and increment result variable with this value
 - For example baaaaa has 2 groups and 1 group has more as than 3 
 ```
 'baaaaa' becomes

@@ -12,7 +12,7 @@ def minimum_moves(input_data):
             print ("sum incremented", sum)
     
     return sum
-minimum_moves('baaabbaabbba')
+minimum_moves('abbbbbbb')
 
 # def minMove(S):
 #     for _, g in groupby(S):
@@ -25,5 +25,5 @@ minimum_moves('baaabbaabbba')
 def minMove(S):
     print sum(len(list(g)) // 3 for _, g in groupby(S))   
 
-S = 'baaabbaabbba'
+S = 'abbbbbbb'
 minMove(S)     
