@@ -30,11 +30,11 @@ class Solution:
             for j in range(1, n +1):
             # Loop throught the length of string 2
                 if str1[i - 1] == str2[j - 1]:
-                # If a charcter is found in lcs
+                # If a charcter is found in lcs the item in array is now 1 + previous item in array
                     dp[i][j] = 1 + dp[i-1][j-1]
                     print('LCs Character found!!', dp)
                 else:
-                    dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+                    dp[i][j] = max(dp[i-1][j], dp[i][j-1], dp[i-1][j-1])
                     print('LCs character not found... yet ;)', dp)
 
         return dp[-1][-1]
